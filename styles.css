@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-.your__class__Container .visually-hidden {
+.galaxy_fold_6 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -22,41 +22,202 @@ body {
   overflow: hidden;
 }
 
-.your__class__Container img {
+.galaxy_fold_6 img {
+  width: 100%;
   margin: 0;
 }
 
-.your__class__Container p {
-  padding: 0;
-  margin: 0;
-}
-
-.your__class__Container h3 {
+.galaxy_fold_6 p {
   padding: 0;
   margin: 0;
 }
 
-.your__class__Container ul {
+.galaxy_fold_6 h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.galaxy_fold_6 ul {
   padding: 0;
 }
 
-.your__class__Container ul li {
+.galaxy_fold_6 ul li {
   padding: 0;
 }
 
-.your__class__Container {
+.galaxy_fold_6 {
   overflow: hidden;
 }
 
-.your__class__Container div {
+.galaxy_fold_6 div {
   padding: 0;
   width: initial;
 }
 
-.your__class__Container br {
+.galaxy_fold_6 br {
   display: block;
 }
 
 .product__body .el-tabs__header {
   z-index: 6;
+}
+
+.galaxy_fold_6 .hero {
+  display: grid;
+  grid-template-rows: 1fr 1.75fr;
+  justify-items: center;
+  align-items: center;
+}
+.galaxy_fold_6 .hero__logo {
+  width: 277px;
+  margin: 46px 0 30px 0;
+}
+
+.galaxy_fold_6 .hero__image {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.citrus.world/uploads/Haber/Samsung_Fold_6/hero_image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galaxy_fold_6 .ai {
+  padding: 40px 0px;
+  display: grid;
+  gap: 32px;
+  background: #000;
+  align-items: center;
+  justify-items: center;
+}
+
+.galaxy_fold_6 .ai__description__container {
+  width: 312px;
+  display: grid;
+  gap: 10px;
+}
+.galaxy_fold_6 .ai__title_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.galaxy_fold_6 .ai__first__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #fff;
+}
+.galaxy_fold_6 .ai__logo__title {
+  width: 26px;
+}
+.galaxy_fold_6 .ai__second__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #fff;
+}
+
+.galaxy_fold_6 .ai__description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
+
+.galaxy_fold_6 .ai__span {
+  font-weight: 600;
+}
+
+.galaxy_fold_6 .swiper-scrollbar {
+  background: #313131;
+  border-radius: 2px;
+}
+
+.galaxy_fold_6 .swiper-horizontal > .swiper-scrollbar,
+.galaxy_fold_6 .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: relative;
+  width: 312px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.galaxy_fold_6 .swiper-scrollbar-drag {
+  border-radius: 2px;
+  width: 25%;
+  background-color: #fff;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.galaxy_fold_6 .swiper {
+  padding: 0;
+  width: 360px;
+}
+
+.galaxy_fold_6 .swiper-wrapper {
+  border-radius: 18px;
+  padding: 40px 24px;
+  margin-bottom: 23px;
+}
+
+.galaxy_fold_6 .swiper-content {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.galaxy_fold_6 .swiper-slide {
+  margin-right: 130px;
+}
+
+.galaxy_fold_6 .swiper-slide-next,
+.galaxy_fold_6 .swiper-slide-prev {
+  opacity: 0.4;
+}
+
+.galaxy_fold_6 .first-slide-image {
+  height: 284px;
+  width: 260px;
+  background-position: right 20% bottom 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+
+.galaxy_fold_6 .second-slide-image {
+  height: 284px;
+  width: 260px;
+  background-position: right 20% bottom 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+
+.galaxy_fold_6 .third-slide-image {
+  height: 284px;
+  width: 260px;
+  background-position: right 20% bottom 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+
+.galaxy_fold_6 .fourth-slide-image {
+  height: 284px;
+  width: 260px;
+  background-position: right 20% bottom 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  border-radius: 15px;
+  border: 1px solid transparent;
 }

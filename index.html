@@ -5,43 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Swiper Example</title>
 </head>
 
 <body>
-    <button class="button__language" id="lang-switch">Включить руссскую версию</button>
     <div class="main__rich__container" id="content">
-        <div class="your-blocks lang uk">Замість DIV "Your-blocks" для роботи вставляєш свій div зі своїми класами і
-            наповненнями, template зроблений для коректного відображення шрифтів, розмірів rich контенту. Для
-            підключення
-            стилів вводимо @import url(./посилання на template.css) </div>
-        <div class="your-blocks lang ru">Вместо DIV "Your-blocks" для работы вставляешь свой div со своими классами и
-            наполнениями, template сделан для корректного отображения шрифтов, размеров rich контента. Для подключения
-            стилей вводим @import url(./ссылка на template.css) </div>
+        <div class="galaxy_fold_6">
+            <div class="hero">
+                <img src="https://i.citrus.world/uploads/Haber/Samsung_Fold_6/hero_logo.svg" alt="" class="hero__logo">
+                <div class="hero__image"></div>
+            </div>
+            <div class="ai">
+                <div class="ai__description__container">
+                    <div class="ai__title_container">
+                        <p class="ai__first__title">Galaxy AI</p>
+                        <img src="https://i.citrus.world/uploads/Haber/Samsung_Fold_6/ai_logo.svg" alt=""
+                            class="ai__logo__title">
+                        <p class="ai__second__title">вже тут</p>
+                    </div>
+                    <div class="ai__description">Galaxy Fold6 – ваш <span class="ai__span"> справжній кишеньковий
+                            комп'ютер.</span> Отримайте
+                        неперевершену потужність і продуктивність у тонкому
+                        корпусі. Зустрічайте розширені можливості на складаних пристроях завдяки Galaxy AI.</div>
+                </div>
+                <div class="swiper myAiSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-content">
+                                <div class="first-slide-image"
+                                    style="background-image: url(https://i.citrus.world/uploads/Haber/Samsung_Fold_6/ai_swiper_1.webp)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-content">
+                                <div class="second-slide-image"
+                                    style="background-image: url(https://i.citrus.world/uploads/Haber/Samsung_Fold_6/ai_swiper_2.webp)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-content">
+                                <div class="third-slide-image"
+                                    style="background-image: url(https://i.citrus.world/uploads/Haber/Samsung_Fold_6/ai_swiper_3.webp)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-content">
+                                <div class="fourth-slide-image"
+                                    style="background-image: url(https://i.citrus.world/uploads/Haber/Samsung_Fold_6/ai_swiper_4.webp)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let currentLang = 'uk';
-        const ukText = document.querySelector('.lang.uk');
-        const ruText = document.querySelector('.lang.ru');
-        const switchButton = document.getElementById('lang-switch');
 
-        ukText.classList.add('active');
-
-        switchButton.addEventListener('click', function () {
-            if (currentLang === 'uk') {
-                ukText.classList.remove('active');
-                ruText.classList.add('active');
-                switchButton.textContent = 'Увімкнути українську версію';
-                currentLang = 'ru';
-            } else {
-                ruText.classList.remove('active');
-                ukText.classList.add('active');
-                switchButton.textContent = 'Включить русскую версию';
-                currentLang = 'uk';
-            }
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const ai_swiper = new Swiper('.myAiSwiper', {
+                slidesPerView: 1.5,
+                spaceBetween: 16,
+                centeredSlides: true,
+                slidesPerGroupSkip: 1,
+                grabCursor: true,
+                loop: true,
+                keyboard: {
+                    enabled: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                autoplay: {
+                    delay: 100000,
+                    disableOnInteraction: false,
+                },
+                mousewheel: {
+                    invert: true,
+                },
+            });
         });
-    });
-</script>
+    </script>
+</body>
 
 </html>
