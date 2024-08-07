@@ -155,13 +155,15 @@ body {
 
 .galaxy_fold_6 .swiper {
   padding: 0;
-  width: 360px;
+  width: 100%;
 }
 
 .galaxy_fold_6 .swiper-wrapper {
   border-radius: 18px;
   padding: 40px 24px;
   margin-bottom: 23px;
+  display: flex;
+  flex-direction: row;
 }
 
 .galaxy_fold_6 .swiper-content {
@@ -169,8 +171,8 @@ body {
   flex-direction: row;
   gap: 8px;
 }
-.galaxy_fold_6 .swiper-slide {
-  margin-right: 130px;
+.galaxy_fold_6 .swiper-slide:first-child {
+  margin-left: -25px;
 }
 
 .galaxy_fold_6 .swiper-slide-next,
@@ -180,19 +182,21 @@ body {
 
 .galaxy_fold_6 .first-slide-image {
   height: 284px;
-  width: 260px;
+  width: 300px;
   background-position: right 20% bottom 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
   border-radius: 15px;
   border: 1px solid transparent;
+  transform: translate3d(0px, 0px, 0px);
 }
 
 .galaxy_fold_6 .second-slide-image {
   height: 284px;
-  width: 260px;
-  background-position: right 20% bottom 50%;
+  width: 300px;
+  background-color: #434b54;
+  background-position: right 53% bottom 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -202,8 +206,8 @@ body {
 
 .galaxy_fold_6 .third-slide-image {
   height: 284px;
-  width: 260px;
-  background-position: right 20% bottom 50%;
+  width: 300px;
+  background-position: right 50% bottom 60%;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -213,8 +217,8 @@ body {
 
 .galaxy_fold_6 .fourth-slide-image {
   height: 284px;
-  width: 260px;
-  background-position: right 20% bottom 50%;
+  width: 300px;
+  background-position: right 70% bottom 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;

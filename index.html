@@ -31,7 +31,7 @@
                 </div>
                 <div class="swiper myAiSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide first">
                             <div class="swiper-content">
                                 <div class="first-slide-image"
                                     style="background-image: url(https://i.citrus.world/uploads/Haber/Samsung_Fold_6/ai_swiper_1.webp)">
@@ -72,11 +72,9 @@
         document.addEventListener("DOMContentLoaded", function () {
             const ai_swiper = new Swiper('.myAiSwiper', {
                 slidesPerView: 1.5,
-                spaceBetween: 16,
+                spaceBetween: 15,
                 centeredSlides: true,
-                slidesPerGroupSkip: 1,
                 grabCursor: true,
-                loop: true,
                 keyboard: {
                     enabled: true,
                 },
@@ -94,6 +92,7 @@
                 mousewheel: {
                     invert: true,
                 },
+
             });
         });
     </script>
