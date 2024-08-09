@@ -64,19 +64,13 @@ body {
 
 .galaxy_fold_6 .hero {
   display: grid;
-  grid-template-rows: 1fr 1.75fr;
   justify-items: center;
-  align-items: center;
-}
-.galaxy_fold_6 .hero__logo {
-  width: 277px;
-  margin: 46px 0 30px 0;
 }
 
 .galaxy_fold_6 .hero__image {
-  width: 100%;
-  height: 100%;
-  background-image: url("https://i.citrus.world/uploads/Haber/Samsung_Fold_6/hero_image.webp");
+  width: 360px;
+  height: 402px;
+  background-image: url("https://i.citrus.world/uploads/Haber/Samsung_Fold_6/hero_360.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,6 +94,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 10px;
 }
 .galaxy_fold_6 .ai__first__title {
   font-family: var(--font-family);
@@ -130,27 +125,6 @@ body {
 
 .galaxy_fold_6 .ai__span {
   font-weight: 600;
-}
-
-.galaxy_fold_6 .swiper-scrollbar {
-  background: #313131;
-  border-radius: 2px;
-}
-
-.galaxy_fold_6 .swiper-horizontal > .swiper-scrollbar,
-.galaxy_fold_6 .swiper-scrollbar.swiper-scrollbar-horizontal {
-  position: relative;
-  width: 312px;
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
-}
-.galaxy_fold_6 .swiper-scrollbar-drag {
-  border-radius: 2px;
-  width: 25%;
-  background-color: #fff;
-  transform: translate3d(0px, 0px, 0px);
 }
 
 .galaxy_fold_6 .swiper {
@@ -190,7 +164,10 @@ body {
   transition: 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.galaxy_fold_6 .first-slide-image {
+.galaxy_fold_6 .first-slide-image,
+.galaxy_fold_6 .second-slide-image,
+.galaxy_fold_6 .third-slide-image,
+.galaxy_fold_6 .fourth-slide-image {
   height: 284px;
   width: 300px;
   background-position: right 20% bottom 50%;
@@ -203,35 +180,183 @@ body {
 }
 
 .galaxy_fold_6 .second-slide-image {
-  height: 284px;
-  width: 300px;
   background-color: #434b54;
-  background-position: right 53% bottom 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  border-radius: 15px;
-  border: 1px solid transparent;
 }
 
-.galaxy_fold_6 .third-slide-image {
-  height: 284px;
-  width: 300px;
-  background-position: right 50% bottom 60%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  border-radius: 15px;
-  border: 1px solid transparent;
+.galaxy_fold_6 .swiper-scrollbar {
+  background: #313131;
+  border-radius: 2px;
 }
 
-.galaxy_fold_6 .fourth-slide-image {
-  height: 284px;
-  width: 300px;
-  background-position: right 70% bottom 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  border-radius: 15px;
-  border: 1px solid transparent;
+.galaxy_fold_6 .swiper-horizontal > .swiper-scrollbar,
+.galaxy_fold_6 .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: relative;
+  width: 312px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.galaxy_fold_6 .swiper-scrollbar-drag {
+  border-radius: 2px;
+  width: 25%;
+  background-color: #fff;
+  transform: translate3d(0px, 0px, 0px);
+  transition: 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.galaxy_fold_6 .swiper-button-prev,
+.galaxy_fold_6 .swiper-button-next {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .galaxy_fold_6 .hero__image {
+    width: 720px;
+    height: 423px;
+    background-image: url("https://i.citrus.world/uploads/Haber/Samsung_Fold_6/hero_768.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .galaxy_fold_6 .ai {
+    padding: 44px 0px;
+    display: grid;
+    gap: 40px;
+    background: #000;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galaxy_fold_6 .ai__description__container {
+    width: 570px;
+    display: grid;
+    gap: 10px;
+  }
+  .galaxy_fold_6 .ai__title_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .galaxy_fold_6 .ai__first__title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .galaxy_fold_6 .ai__logo__title {
+    width: 26px;
+  }
+  .galaxy_fold_6 .ai__second__title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .galaxy_fold_6 .ai__description {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .galaxy_fold_6 .ai__span {
+    font-weight: 600;
+  }
+
+  .galaxy_fold_6 .swiper-scrollbar {
+    background: #313131;
+    border-radius: 2px;
+  }
+
+  .galaxy_fold_6 .swiper {
+    padding: 0;
+    width: 100%;
+  }
+
+  .galaxy_fold_6 .swiper-wrapper {
+    border-radius: 18px;
+    padding: 40px 24px;
+    margin-bottom: 23px;
+    display: flex;
+    flex-direction: row;
+    transition: 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .galaxy_fold_6 .swiper-content {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .galaxy_fold_6 .swiper-wrapper {
+    transform: translate3d(30px, 0px, 0px);
+    transition: 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .galaxy_fold_6 .swiper-slide-active:nth-last-child(3),
+  .galaxy_fold_6 .swiper-backface-hidden .swiper-slide {
+    transform: translateX(-10%);
+    transition: 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .galaxy_fold_6 .swiper-slide-next,
+  .galaxy_fold_6 .swiper-slide-prev {
+    opacity: 0.4;
+    transition: 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .galaxy_fold_6 .first-slide-image,
+  .galaxy_fold_6 .second-slide-image,
+  .galaxy_fold_6 .third-slide-image,
+  .galaxy_fold_6 .fourth-slide-image {
+    border-radius: 18px;
+    width: 560px;
+    height: 328px;
+    background-position: right 20% bottom 50%;
+  }
+
+  .galaxy_fold_6 .swiper-scrollbar {
+    background: #313131;
+    border-radius: 3px;
+  }
+
+  .galaxy_fold_6 .swiper-horizontal > .swiper-scrollbar,
+  .galaxy_fold_6 .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 640px;
+    height: 3px;
+  }
+  .galaxy_fold_6 .swiper-scrollbar-drag {
+    border-radius: 3px;
+  }
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 50%;
+    transition: background 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 750ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .galaxy_fold_6 .swiper-button-prev,
+  .galaxy_fold_6 .swiper-button-next {
+    position: absolute;
+    margin: 20px;
+    overflow: visible;
+    clip-path: none;
+    clip: auto;
+    border: 0.5px solid #fff;
+    border-radius: 50px;
+    width: 56px;
+  }
 }
